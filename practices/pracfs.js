@@ -17,5 +17,23 @@
 // })
 // B.listen(4000);
 
+//  run on server //
+
+// var A=require('http');
+// var fs=require('fs');
+// var B = A.createServer(function(req,res){
+//     fs.appendFileSync("para.txt","Lakshyalakshya yh gfyh gfh ghjghj ghj j","utf-8");
+    
+//     res.end()
+// })
+// B.listen(4000);
 
 
+var A=require('http');
+var fs=require('fs');
+var B = A.createServer(function(req,res){
+    fs.appendFileSync("para.txt","Lakshya is isis","utf-8");
+    
+    res.end()
+})
+B.listen(5000);
