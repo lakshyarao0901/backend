@@ -33,29 +33,3 @@
 // console.log("Server running on 3000");
 
 
-
-const http = require("http");
-
-const B = http.createServer((req, res) => {
-
-  if (req.method === "PUT") {
-   res.end("server is running ");
-    let body = "";
-
-    req.on("data", (chunk) => {
-      body += chunk;   
-    });
-
-    req.on("end", () => {
-      console.log("Received Data:", body);
-
-      res.writeHead(200, { "Content-Type": "text/plain" });
-      res.end("Data updated successfully");
-    });
-
-  }
-
-})
-B.listen(2000);
-
-console.log("Server running on 3000");
