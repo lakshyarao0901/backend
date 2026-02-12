@@ -1,4 +1,4 @@
-//  run on cmd //
+// ========================================= run on cmd =============================//
 
 // var fs = require("fs");
 // const path = require("path");
@@ -6,7 +6,7 @@
 // var d = fs.readFileSync("practices/para.txt","utf-8");
 // console.log("data is :-" +d);
 
-//  run on server //
+// ========================== run on server======================================= //
 
 // var A=require('http');
 // var fs=require('fs');
@@ -17,23 +17,27 @@
 // })
 // B.listen(4000);
 
-//  run on server //
+// ============================== run on server ====================================//
 
 // var A=require('http');
 // var fs=require('fs');
+// const path = require("path");
 // var B = A.createServer(function(req,res){
-//     fs.appendFileSync("para.txt","Lakshyalakshya yh gfyh gfh ghjghj ghj j","utf-8");
-    
-//     res.end()
+//     const data = fs.readFileSync("practices/para.txt","utf-8");
+//     res.end(data)
 // })
 // B.listen(4000);
 
+// ============================================ runs no server======================== //
+// var A=require('http');
+// var fs=require('fs');
+// const path = require("path");
+// var B = A.createServer(function(req,res){
+//     fs.appendFileSync("para.txt","Lakshya is isis","utf-8");
+//     const data = fs.readFileSync("para.txt","utf-8");
+//     res.end(data)
+// })
+// B.listen(5000);
+// ==================================//
 
-var A=require('http');
-var fs=require('fs');
-var B = A.createServer(function(req,res){
-    fs.appendFileSync("para.txt","Lakshya is isis","utf-8");
-    
-    res.end()
-})
-B.listen(5000);
+
